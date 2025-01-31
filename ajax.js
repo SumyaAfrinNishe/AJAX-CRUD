@@ -1,3 +1,5 @@
+//insert section starts here
+
 $(".btn").click(function () {
 
     var name = $("#name").val();
@@ -8,9 +10,31 @@ $(".btn").click(function () {
         url: "insert.php",
         data:{name:name,email:email,pass:pass},
         success: function (data) {
-            alert(data);
+            read(data);
             // $("#reload").html(data)
         }
         
     }); 
 });
+
+//insert section ends here
+
+
+
+
+
+//reading data section starts here
+
+function read() {
+    var read = "";
+    $.ajax({
+        url: "read.php",
+        method: "POST",
+        data: { read: read },
+        success: function (data) {
+            $("#tbody").html(data);
+        }
+    });
+}
+
+//reading data section ends here

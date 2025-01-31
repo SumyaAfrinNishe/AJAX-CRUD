@@ -1,7 +1,7 @@
 body{
     width: 700px;
     height: 700px;
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(218, 210, 210);
     margin: 0 auto;
     text-align: center;
 }
@@ -10,12 +10,13 @@ h1{
     color: white;
 }
 
+
 input{
     width: 90%;
     padding: 10px;
     margin-top: 7px;
-    background-color: #c315f4;
-    color: white;
+    background-color: #f6eff8;
+    color: rgb(7, 7, 7);
 }
 
 .btn{
@@ -25,4 +26,16 @@ input{
     margin-top: 10px;
     color: white;
     cursor: pointer;
+}
+
+table{
+    width: 100%;
+}
+
+table,th,td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse:collapse;
+
 }
