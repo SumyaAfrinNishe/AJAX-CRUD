@@ -49,14 +49,17 @@ function read() {
 //
 //deleting data section starts here
 function Delete(userId){
-    $.ajax({
-        url: "delete.php",
-        method: "POST",
-        data: { userId: userId },
-        success: function (data) {
-            alert(data);
-        }
-
-    });
+    $con = confirm("Are You Sure?");
+    if ($con == true) {
+        $.ajax({
+            url: "delete.php",
+            method: "POST",
+            data: { userId: userId },
+            success: function (data) {
+                read();
+            }
+    
+        });
+    }
 }
 //deleting data section ends here
