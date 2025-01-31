@@ -18,6 +18,7 @@
         <h3>Reading Data from Database</h3>
         <table>
             <thead>
+                <th>Id</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Password</th>

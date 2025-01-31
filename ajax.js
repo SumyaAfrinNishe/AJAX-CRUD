@@ -18,11 +18,13 @@ $(".btn").click(function () {
 });
 
 //insert section ends here
-
-
-
-
-
+//
+//
+//
+//
+//
+//
+//
 //reading data section starts here
 
 function read() {
@@ -38,3 +40,23 @@ function read() {
 }
 
 //reading data section ends here
+//
+//
+//
+//
+//
+//
+//
+//deleting data section starts here
+function Delete(userId){
+    $.ajax({
+        url: "delete.php",
+        method: "POST",
+        data: { userId: userId },
+        success: function (data) {
+            alert(data);
+        }
+
+    });
+}
+//deleting data section ends here
