@@ -1,0 +1,28 @@
+body{
+    width: 700px;
+    height: 700px;
+    background-color: rgb(44, 44, 44);
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 7px;
+    background-color: #c315f4;
+    color: white;
+}
+
+.btn{
+    background-color: blue;
+    width: 60%;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
