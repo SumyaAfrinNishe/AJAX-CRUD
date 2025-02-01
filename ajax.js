@@ -94,7 +94,7 @@ function Edit(userId) {
 //
 //
 //
-//update query
+//update query starts
 function UPDATE_DATA(userId) {
     var name = $("#name").val();
     var email = $("#email").val();
@@ -108,3 +108,22 @@ function UPDATE_DATA(userId) {
         }
     });
 }
+//update query ends
+//
+//
+//
+//
+//
+//read data start
+$(".read").click(function () {
+    var read = "";
+    $.ajax({
+        url: "read.php",
+        method: "POST",
+        data: { read: read },
+        success: function (data) {
+            $("#tbody").html(data);
+        }
+    });
+});
+//read data end

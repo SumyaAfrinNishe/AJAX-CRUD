@@ -14,6 +14,7 @@
         <input id="email" type="email" placeholder="Enter Email"><br>
         <input id="pass" type="text" placeholder="Enter Password"><br>
         <button class="btn">Insert Data</button>
+        <button class="read">Read</button>
 
         <h3>Reading Data from Database</h3>
         <table>
