@@ -127,3 +127,22 @@ $(".read").click(function () {
     });
 });
 //read data end
+//
+//
+//
+//
+//
+//
+//home starts
+function home() {
+    var read = "";
+    $.ajax({
+        url: "index.php",
+        method: "POST",
+        data: { read: read },
+        success: function (data) {
+            $("body").html(data);
+        }
+    });
+}
+//home ends

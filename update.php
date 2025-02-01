@@ -22,6 +22,7 @@ $row = mysqli_fetch_array($ex);
         <input id="email" type="email" value="<?php echo $row['email']?>" placeholder="Enter Email"><br>
         <input id="pass" type="text" value="<?php echo $row['pass']?>" placeholder="Enter Password"><br>
         <button class="edit" onclick="UPDATE_DATA(<?php echo $row['id']?>)" >Edit Data</button>
+        <button class="edit" onclick="home(<?php echo $row['id']?>)" >Home</button>
 </div>
 </body>
 </html>
