@@ -63,3 +63,48 @@ function Delete(userId){
     }
 }
 //deleting data section ends here
+//
+//
+//
+//
+//
+//
+//edit data starts here
+function Edit(userId) {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var pass = $("#pass").val();
+
+    $.ajax({
+        url: "update.php",
+        method: "GET",
+        data: {
+            name:name, email:email,pass:pass,userId:userId
+        },
+        success: function (data) {
+            $("body").html(data);
+        }
+    });
+}
+
+//edit data ends here
+
+//
+//
+//
+//
+//
+//update query
+function UPDATE_DATA(userId) {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var pass = $("#pass").val();
+    $.ajax({
+        url: "updateQuery.php",
+        method: "GET",
+        data: { name: name, email: email, pass: pass, userId: userId },
+        success: function (data) {
+            alert(data);
+        }
+    });
+}
